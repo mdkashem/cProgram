@@ -1,3 +1,7 @@
+/*
+Author : Md Abul Kashem 
+Description : This program will find H-index; 
+*/
 #include <stdio.h>
 int min (int num1, int num2); // function to find minmum number
 int hIndex (int citations[], int length); // this functionn will find the H-index 
