@@ -11,7 +11,7 @@ type and name so that the compiler can proceed for further compilation without r
 extern int a, b;
 extern int c;
 extern float f;
-extern v;
+
 #define LENGTH 10 // TO define constant 
 static int count = 5; /* global variable */
 void staticTest(void);// function to test static variable 
@@ -23,23 +23,25 @@ int main() {
   int a, b;
   int c;
   float f;
-  int v;
+
   const int length = 10;
    // actual intiation 
    a =10;
    b= 20;
    c = a+b;
+   char a1 = 'a';
+   char a2 = 'A';
+   int i = a1-a2;
+   
    auto int month ; // auto, by default all auto, 
    register int mile; // stored in register instead of RAM 
    static int count =5; // exist life time of the program; 
    printf("Value of c : %d \n", c);
    f= 70.0/3.0;
 
-   printf("Value of the f : %f \n",f);
+   printf("Value of the i : %d \n",i);
 
-   v = func();
-
-   printf("Value from function : %d \n", v);
+ 
 
    while(count--){
    	   staticTest();
